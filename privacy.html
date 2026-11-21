@@ -36,8 +36,10 @@
 <h2>Notifications</h2>
 <p>Alarms and reminders are scheduled on your iPhone with Apple's AlarmKit and local notifications. We do not send push messages from a server.</p>
 
-<h2>Content Hub and TikTok</h2>
-<p>Content Hub is our internal desktop tool that publishes our own videos to our own TikTok accounts. When we connect one of our accounts through TikTok Login Kit, Content Hub receives that account's basic profile info (open ID, display name, avatar) and an access token. The token is stored only in the macOS Keychain on our own computer; it is never sent to any server other than TikTok's. Content Hub uses the token only to upload and publish videos we approve, and does not access any other TikTok users' data. Access can be revoked at any time in the TikTok app under Settings → Security → Manage app permissions.</p>
+<h2>Content Hub and social networks</h2>
+<p>Content Hub is our internal desktop tool that publishes our own videos to our own accounts on TikTok, Instagram, Threads, YouTube and Pinterest. When we connect one of our accounts through the network's official login (TikTok Login Kit, Meta/Instagram Login, Threads API, Google OAuth, Pinterest OAuth), Content Hub receives that account's basic profile info (account ID, username, display name, avatar) and an access token, and for Pinterest the list of our boards so we can choose where a pin goes.</p>
+<p>Tokens are stored only in the macOS Keychain on our own computer and are never sent to any server other than the network they belong to. Content Hub uses them only to upload and publish videos we approve and to check that the connection works. It does not read, store or process data of any other users of these networks, and it does not sell or share any data.</p>
+<p>Access can be revoked at any time in each network's settings (for example TikTok: Settings → Security → Manage app permissions; Instagram/Threads: Settings → Website permissions; Google: myaccount.google.com/permissions; Pinterest: Settings → Security and logins → Apps).</p>
 
 <h2>Data retention and deletion</h2>
 <p>Data on your device is deleted when you delete the app. Anonymous analytics and purchase records kept by Amplitude and Adapty are held for as long as needed for the purposes above. To ask us to delete data linked to your device ID, write to the email below.</p>
